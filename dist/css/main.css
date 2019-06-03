@@ -1,3 +1,178 @@
+* {
+  box-sizing: border-box; }
+
 body {
-  background: #cccccc;
-  color: #2a4459; }
+  background: #444;
+  color: #fff;
+  height: 100%;
+  margin: 0;
+  font-family: Catamaran;
+  line-height: 1.5; }
+  body#bg-img {
+    background: url(../img/JemAgro.jpg);
+    background-attachment: fixed;
+    background-size: cover; }
+    body#bg-img:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(68, 68, 68, 0.9);
+      z-index: -1; }
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 900; }
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
+    font-size: 6rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9); }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(73, 73, 73, 0.5); }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+
+header {
+  position: fixed;
+  z-index: 5;
+  width: 100%; }
+
+.text-secondary {
+  color: #ff6600; }
+
+main {
+  padding: 4rem;
+  height: 100%;
+  /*.index-links div h3{
+    font-family: Catamaran;
+    font-weight: 900;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    text-transform: uppercase;
+}
+  footer {
+    margin-top: 20px;
+    width: 100%;
+  }*/ }
+  main .footer-social-icons {
+    margin-top: rem; }
+    main .footer-social-icons a:hover {
+      color: #ff6600;
+      transition: all 0.5s ease-out; }
+  main#home {
+    overflow: hidden; }
+    main#home h1 {
+      margin-top: 10vh; }
+  main .sm-heading {
+    font-family: Catamaran;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 30px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9); }
+  main h4 {
+    font-family: Cormorant Garamond;
+    font-size: 20px;
+    font-weight: 1000;
+    font-style: italic;
+    line-height: 10px;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.19); }
+  main .index-links div {
+    margin-top: 5rem;
+    margin: 20px 10px 0;
+    height: 150px;
+    align-items: center;
+    background-color: rgba(204, 204, 204, 0.19);
+    float: left; }
+  main .index-links div:hover {
+    background-color: rgba(42, 204, 204, 0.19); }
+  main .index-links {
+    padding-bottom: 10px;
+    overflow: hidden; }
+  main .index-boxlink-rectangle {
+    width: calc(30% - 25px) !important; }
+  main .index-links h3 {
+    text-align: center;
+    margin-top: 1.2rem;
+    font-family: Catamaran;
+    font-weight: 900;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase; }
+  main .footer-social-icons {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 5px; }
+  main .footer-social-icons ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center; }
+  main .footer-social-icons ul li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 5px 10px;
+    border-radius: 100%;
+    margin-right: 2px;
+    text-align: center; }
+  main .footer-social-icons ul li a {
+    color: #fff;
+    display: block;
+    font-size: 22px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75); }
+  main .footer-social-icons ul li a i {
+    line-height: 50px; }
+  main .footer-social-icons ul li:nth-child(1) {
+    background: #3b5998;
+    border-radius: 100%; }
+  main .footer-social-icons ul li:nth-child(2) {
+    background: #1da1f2;
+    border-radius: 100%; }
+  main .footer-social-icons ul li:nth-child(3) {
+    background: #007bb5;
+    border-radius: 100%; }
+  main .footer-social-icons ul li:nth-child(4) {
+    background: #25d366;
+    border-radius: 100%; }
+  main .footer-social-icons ul li:nth-child(5) {
+    background: #00aff0;
+    border-radius: 100%; }
+  main .footer-social-icons ul li:nth-child(6) {
+    background: #db4437;
+    border-radius: 100%; }
+  main .footer-social-icons ul li:nth-child(7) {
+    background: #09b83e;
+    border-radius: 100%; }
+
+.footer-bottom {
+  margin-top: 2rem;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 10px;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+  margin-bottom: 1px; }
+
+.footer-bottom p a:hover {
+  text-decoration: none;
+  color: #ff6600;
+  font-weight: 900; }
+
+.footer-bottom p.terms-conditions {
+  font-size: 11px;
+  text-align: center;
+  color: black;
+  font-weight: 900; }

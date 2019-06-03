@@ -1,6 +1,204 @@
-$primary-color: rgb(204,204,204);
+@import "config";
+* {
+  box-sizing: border-box;
+}
 
 body {
-    background: $primary-color;
-    color: rgb(42, 68, 89);
+  @include background;
+  background: $primary-color;
+  color: #fff;
+  height: 100%;
+  margin: 0;
+  font-family: Catamaran;
+  line-height: 1.5;
+}
+
+//headings
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 900;
+
+  &.lg-heading {
+    font-size: 6rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+  }
+  &.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($primary-color, 2), 0.5);
+  }
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+header {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+main {
+  padding: 4rem;
+  height: 100%;
+
+  .footer-social-icons {
+    margin-top: rem;
+
+    a {
+      &:hover {
+        color: $secondary-color;
+        @include easeOut();
+      }
+    }
+  }
+  &#home {
+    overflow: hidden;
+    h1 {
+      margin-top: 10vh;
+    }
+  }
+  .sm-heading {
+    font-family: Catamaran;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 30px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+  }
+  h4 {
+    font-family: Cormorant Garamond;
+    font-size: 20px;
+    font-weight: 1000;
+    font-style: italic;
+    line-height: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.19);
+  }
+
+  .index-links div {
+    margin-top: 5rem;
+    margin: 20px 10px 0;
+    height: 150px;
+    align-items: center;
+    background-color: rgba(204, 204, 204, 0.19);
+    float: left;
+  }
+  .index-links div:hover {
+    background-color: rgba(42, 204, 204, 0.19);
+  }
+  .index-links {
+    padding-bottom: 10px;
+    overflow: hidden;
+  }
+  .index-boxlink-rectangle {
+    width: calc(30% - 25px) !important;
+  }
+  .index-links h3 {
+    text-align: center;
+    margin-top: 1.2rem;
+    font-family: Catamaran;
+    font-weight: 900;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+  }
+
+  /*.index-links div h3{
+    font-family: Catamaran;
+    font-weight: 900;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    text-transform: uppercase;
+}
+  footer {
+    margin-top: 20px;
+    width: 100%;
+  }*/
+
+  .footer-social-icons {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+  .footer-social-icons ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+  }
+  .footer-social-icons ul li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 5px 10px;
+    border-radius: 100%;
+    margin-right: 2px;
+    text-align: center;
+  }
+  .footer-social-icons ul li a {
+    color: #fff;
+    display: block;
+    font-size: 22px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
+  }
+  .footer-social-icons ul li a i {
+    line-height: 50px;
+  }
+  .footer-social-icons ul li:nth-child(1) {
+    background: #3b5998;
+    border-radius: 100%;
+  }
+  .footer-social-icons ul li:nth-child(2) {
+    background: #1da1f2;
+    border-radius: 100%;
+  }
+  .footer-social-icons ul li:nth-child(3) {
+    background: #007bb5;
+    border-radius: 100%;
+  }
+  .footer-social-icons ul li:nth-child(4) {
+    background: #25d366;
+    border-radius: 100%;
+  }
+  .footer-social-icons ul li:nth-child(5) {
+    background: #00aff0;
+    border-radius: 100%;
+  }
+  .footer-social-icons ul li:nth-child(6) {
+    background: #db4437;
+    border-radius: 100%;
+  }
+  .footer-social-icons ul li:nth-child(7) {
+    background: #09b83e;
+    border-radius: 100%;
+  }
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 10px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+  margin-bottom: 1px;
+}
+.footer-bottom p a:hover {
+  text-decoration: none;
+  color: rgb(255, 102, 0);
+  font-weight: 900;
+}
+.footer-bottom p.terms-conditions {
+  font-size: 11px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: 900;
 }
