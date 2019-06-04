@@ -9,7 +9,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: #cccccc;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -97,43 +97,12 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
-@media screen and (max-width: 768px) {
-  main {
-    align-items: center;
-    text-align: center; }
-    main .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem; }
-  ul.menu-nav,
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0; }
-    ul.menu-nav.show,
-    div.menu-branding.show {
-      transform: translate3d(0, 0, 0); }
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px; }
-  .menu-branding {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0); }
-    .menu-branding .portrait {
-      background: url("../img/james.jpg");
-      width: 150px;
-      height: 150px; } }
-
-@media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 10vh; } }
-
 * {
   box-sizing: border-box; }
 
 body {
   background: #2a4459;
-  color: #fff;
+  color: #cccccc;
   height: 100%;
   margin: 0;
   font-family: Catamaran;
@@ -149,7 +118,7 @@ body {
       right: 0;
       width: 100%;
       height: 100%;
-      background: rgba(42, 68, 89, 0.5);
+      background: rgba(42, 68, 89, 0.3);
       z-index: -1; }
 
 h1,
@@ -167,7 +136,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(45, 73, 96, 0.5); }
+    background: rgba(44, 71, 92, 0.5); }
 
 a {
   color: #fff;
@@ -183,7 +152,7 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%;
+  min-height: calc(100vh - 60px);
   /*.index-links div h3{
     font-family: Catamaran;
     font-weight: 900;
@@ -275,16 +244,10 @@ main {
     background: #007bb5;
     border-radius: 100%; }
   main .footer-social-icons ul li:nth-child(4) {
-    background: #25d366;
-    border-radius: 100%; }
-  main .footer-social-icons ul li:nth-child(5) {
     background: #00aff0;
     border-radius: 100%; }
-  main .footer-social-icons ul li:nth-child(6) {
+  main .footer-social-icons ul li:nth-child(5) {
     background: #db4437;
-    border-radius: 100%; }
-  main .footer-social-icons ul li:nth-child(7) {
-    background: #09b83e;
     border-radius: 100%; }
 
 .footer-bottom {
@@ -305,3 +268,68 @@ main {
   text-align: center;
   color: black;
   font-weight: 900; }
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr); }
+  .about-info .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: #ff6600 3px solid; }
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 1rem; }
+  .about-info .job-1 {
+    grid-area: job1; }
+  .about-info .job-2 {
+    grid-area: job2; }
+  .about-info .job-3 {
+    grid-area: job3; }
+  .about-info .job {
+    background: #32516a;
+    padding: 0.5rem;
+    border-bottom: #ff6600 5px solid; }
+
+#main-footer {
+  text-align: left;
+  padding: 1rem;
+  background: #1a2a36;
+  color: #cccccc;
+  height: 60px; }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      background: url("../img/james.jpg");
+      width: 150px;
+      height: 150px; }
+  .about-info {
+    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-columns: 1fr; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; } }

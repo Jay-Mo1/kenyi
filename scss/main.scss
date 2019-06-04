@@ -1,6 +1,5 @@
 @import "config";
 @import "menu";
-@import "mobile";
 
 * {
   box-sizing: border-box;
@@ -9,7 +8,7 @@
 body {
   @include background;
   background: $primary-color;
-  color: #fff;
+  color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
   font-family: Catamaran;
@@ -31,7 +30,7 @@ h3 {
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
+    background: rgba(lighten($primary-color, 1), 0.5);
   }
 }
 
@@ -50,7 +49,8 @@ header {
 }
 main {
   padding: 4rem;
-  height: 100%;
+  //height: 100%;
+  min-height: calc(100vh - 60px);
 
   .footer-social-icons {
     margin-top: rem;
@@ -168,19 +168,11 @@ main {
     border-radius: 100%;
   }
   .footer-social-icons ul li:nth-child(4) {
-    background: #25d366;
-    border-radius: 100%;
-  }
-  .footer-social-icons ul li:nth-child(5) {
     background: #00aff0;
     border-radius: 100%;
   }
-  .footer-social-icons ul li:nth-child(6) {
+  .footer-social-icons ul li:nth-child(5) {
     background: #db4437;
-    border-radius: 100%;
-  }
-  .footer-social-icons ul li:nth-child(7) {
-    background: #09b83e;
     border-radius: 100%;
   }
 }
@@ -204,3 +196,45 @@ main {
   color: rgb(0, 0, 0);
   font-weight: 900;
 }
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr);
+
+  .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: $secondary-color 3px solid;
+  }
+  .bio {
+    grid-area: bio;
+    font-size: 1rem;
+  }
+  .job-1 {
+    grid-area: job1;
+  }
+  .job-2 {
+    grid-area: job2;
+  }
+  .job-3 {
+    grid-area: job3;
+  }
+  .job {
+    background: lighten($primary-color, 5);
+    padding: 0.5rem;
+    border-bottom: $secondary-color 5px solid;
+  }
+}
+
+#main-footer {
+  text-align: left;
+  padding: 1rem;
+  background: darken($primary-color, 10);
+  color: set-text-color($primary-color);
+  height: 60px;
+}
+
+@import "mobile";
