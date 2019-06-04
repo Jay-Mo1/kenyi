@@ -92,8 +92,8 @@ main {
     margin: 20px 10px 0;
     height: 150px;
     align-items: center;
-    background-color: rgba(204, 204, 204, 0.19);
-    float: left;
+    background: rgba(lighten($primary-color, 1), 0.5);
+    padding: 10px 0;
   }
   .index-links div:hover {
     background-color: rgba(42, 204, 204, 0.19);
@@ -226,6 +226,22 @@ main {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+  }
+}
+//services offered
+.projects {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  img {
+    width: 100%;
+    border: 3px rgb(204, 204, 204) solid;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
   }
 }
 

@@ -193,8 +193,8 @@ main {
     margin: 20px 10px 0;
     height: 150px;
     align-items: center;
-    background-color: rgba(204, 204, 204, 0.19);
-    float: left; }
+    background: rgba(44, 71, 92, 0.5);
+    padding: 10px 0; }
   main .index-links div:hover {
     background-color: rgba(42, 204, 204, 0.19); }
   main .index-links {
@@ -293,12 +293,32 @@ main {
     padding: 0.5rem;
     border-bottom: #ff6600 5px solid; }
 
+.projects {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr); }
+  .projects img {
+    width: 100%;
+    border: 3px #cccccc solid; }
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: #ff6600;
+      transition: all 0.5s ease-out; }
+
 #main-footer {
   text-align: left;
   padding: 1rem;
   background: #1a2a36;
   color: #cccccc;
   height: 60px; }
+
+@media screen and (min-width: 1171px) {
+  .index-links div {
+    float: left; } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .index-links div {
+    float: left; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -328,8 +348,12 @@ main {
       height: 150px; }
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .index-links div {
+    float: left; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
-    margin-top: 10vh; } }
+    margin-top: 10vh; }
+  .index-links div {
+    width: calc(100% - 60px) !important; } }

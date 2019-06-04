@@ -1,9 +1,15 @@
 //for wide screens
 @include mediaXl {
+  .index-links div {
+    float: left;
+  }
 }
 
 //for desktops and laptops
 @include mediaLg {
+  .index-links div {
+    float: left;
+  }
 }
 
 //for Tablets and small laptops
@@ -50,11 +56,17 @@
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr;
   }
+  .index-links div {
+    float: left;
+  }
 }
 
 //for smartphones
 @include mediaSm {
   main#home h1 {
     margin-top: 10vh;
+  }
+  .index-links div {
+    width: calc(100% - 60px) !important;
   }
 }
