@@ -54,7 +54,7 @@ h3.text-secondary {
 }
 h6 {
   font-family: Catamaran;
-  font-size: 3rem;
+  font-size: 1rem;
 }
 main {
   padding: 4rem;
@@ -128,8 +128,8 @@ main {
     width: 100%;
     height: auto;
     margin: auto;
-    margin-bottom: 20px;
-    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-top: 120px;
   }
   .footer-social-icons ul {
     margin: 0px;
@@ -140,15 +140,13 @@ main {
     display: inline-block;
     width: 50px;
     height: 50px;
-    margin: 5px 10px;
-    border-radius: 100%;
     margin-right: 2px;
     text-align: center;
   }
   .footer-social-icons ul li a {
     color: #fff;
     display: block;
-    font-size: 22px;
+    font-size: 15px;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
   }
   .footer-social-icons ul li a i {
@@ -206,7 +204,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: $secondary-color 3px solid;
+    border: $secondary-color 1px solid;
   }
   .bio {
     grid-area: bio;
@@ -228,9 +226,51 @@ main {
   }
   ul {
     position: absolute;
+    top: 200%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  ul.workc {
+    top: 150%;
+  }
+  ul li {
+    list-style: none;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 50px;
+    background: rgba(lighten($secondary-color, 1), 0.6);
+    border-radius: 50%;
+  }
+  ul li:hover {
+    background: darken($secondary-color, 1);
+    box-shadow: 0 0 10px rgba(lighten($secondary-color, 1), 0.6),
+      0 0 20px rgba(lighten($secondary-color, 1), 0.6),
+      0 0 30px rgba(lighten($secondary-color, 1), 0.6),
+      0 0 0 75px rgba(lighten($secondary-color, 1), 0.06),
+      0 0 0 60px rgba(lighten($secondary-color, 1), 0.06),
+      0 0 0 45px rgba(lighten($secondary-color, 1), 0.06),
+      0 0 0 30px rgba(lighten($secondary-color, 1), 0.06),
+      0 0 0 15px rgba(lighten($secondary-color, 1), 0.06);
+  }
+
+  #active {
+    background: rgba(lighten($secondary-color, 1), 0.3);
+    box-shadow: 0 0 10px rgba(lighten($secondary-color, 1), 0.6),
+      0 0 20px rgba(lighten($secondary-color, 1), 0.6),
+      0 0 30px rgba(lighten($secondary-color, 1), 0.6),
+      0 0 0 75px rgba(lighten($secondary-color, 1), 0.06),
+      0 0 0 60px rgba(lighten($secondary-color, 1), 0.06),
+      0 0 0 45px rgba(lighten($secondary-color, 1), 0.06),
+      0 0 0 30px rgba(lighten($secondary-color, 1), 0.06),
+      0 0 0 15px rgba(lighten($secondary-color, 1), 0.06);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
   }
 }
 //services offered

@@ -155,6 +155,10 @@ header {
 h3.text-secondary {
   font-size: 3rem; }
 
+h6 {
+  font-family: Catamaran;
+  font-size: 1rem; }
+
 main {
   padding: 4rem;
   min-height: calc(100vh - 60px); }
@@ -209,8 +213,8 @@ main {
     width: 100%;
     height: auto;
     margin: auto;
-    margin-bottom: 20px;
-    margin-top: 5px; }
+    margin-bottom: 5px;
+    margin-top: 120px; }
   main .footer-social-icons ul {
     margin: 0px;
     padding: 0px;
@@ -219,14 +223,12 @@ main {
     display: inline-block;
     width: 50px;
     height: 50px;
-    margin: 5px 10px;
-    border-radius: 100%;
     margin-right: 2px;
     text-align: center; }
   main .footer-social-icons ul li a {
     color: #fff;
     display: block;
-    font-size: 22px;
+    font-size: 15px;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75); }
   main .footer-social-icons ul li a i {
     line-height: 50px; }
@@ -274,7 +276,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #ff6600 3px solid; }
+    border: #ff6600 1px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1rem; }
@@ -288,6 +290,34 @@ main {
     background: #111111;
     padding: 0.5rem;
     border-bottom: #ff6600 5px solid; }
+  .about-info ul {
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    margin: 0;
+    padding: 0; }
+  .about-info ul.workc {
+    top: 150%; }
+  .about-info ul li {
+    list-style: none;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 50px;
+    background: rgba(255, 105, 5, 0.6);
+    border-radius: 50%; }
+  .about-info ul li:hover {
+    background: #fa6400;
+    box-shadow: 0 0 10px rgba(255, 105, 5, 0.6), 0 0 20px rgba(255, 105, 5, 0.6), 0 0 30px rgba(255, 105, 5, 0.6), 0 0 0 75px rgba(255, 105, 5, 0.06), 0 0 0 60px rgba(255, 105, 5, 0.06), 0 0 0 45px rgba(255, 105, 5, 0.06), 0 0 0 30px rgba(255, 105, 5, 0.06), 0 0 0 15px rgba(255, 105, 5, 0.06); }
+  .about-info #active {
+    background: rgba(255, 105, 5, 0.3);
+    box-shadow: 0 0 10px rgba(255, 105, 5, 0.6), 0 0 20px rgba(255, 105, 5, 0.6), 0 0 30px rgba(255, 105, 5, 0.6), 0 0 0 75px rgba(255, 105, 5, 0.06), 0 0 0 60px rgba(255, 105, 5, 0.06), 0 0 0 45px rgba(255, 105, 5, 0.06), 0 0 0 30px rgba(255, 105, 5, 0.06), 0 0 0 15px rgba(255, 105, 5, 0.06);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; }
 
 .projects {
   display: grid;
