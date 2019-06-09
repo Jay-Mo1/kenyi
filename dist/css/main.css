@@ -157,17 +157,7 @@ h3.text-secondary {
 
 main {
   padding: 4rem;
-  min-height: calc(100vh - 60px);
-  /*.index-links div h3{
-    font-family: Catamaran;
-    font-weight: 900;
-    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    text-transform: uppercase;
-}
-  footer {
-    margin-top: 20px;
-    width: 100%;
-  }*/ }
+  min-height: calc(100vh - 60px); }
   main .footer-social-icons {
     margin-top: rem; }
     main .footer-social-icons a:hover {
@@ -206,7 +196,8 @@ main {
     padding-bottom: 10px;
     overflow: hidden; }
   main .index-boxlink-rectangle {
-    width: calc(30% - 25px) !important; }
+    width: calc(30% - 25px) !important;
+    height: 80% !important; }
   main .index-links h3 {
     text-align: center;
     margin-top: 1.2rem;
