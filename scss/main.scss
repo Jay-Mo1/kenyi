@@ -224,54 +224,6 @@ main {
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
   }
-  ul {
-    position: absolute;
-    top: 200%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  ul.workc {
-    top: 150%;
-  }
-  ul li {
-    list-style: none;
-    text-align: center;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    margin: 0 50px;
-    background: rgba(lighten($secondary-color, 1), 0.6);
-    border-radius: 50%;
-  }
-  ul li:hover {
-    background: darken($secondary-color, 1);
-    box-shadow: 0 0 10px rgba(lighten($secondary-color, 1), 0.6),
-      0 0 20px rgba(lighten($secondary-color, 1), 0.6),
-      0 0 30px rgba(lighten($secondary-color, 1), 0.6),
-      0 0 0 75px rgba(lighten($secondary-color, 1), 0.06),
-      0 0 0 60px rgba(lighten($secondary-color, 1), 0.06),
-      0 0 0 45px rgba(lighten($secondary-color, 1), 0.06),
-      0 0 0 30px rgba(lighten($secondary-color, 1), 0.06),
-      0 0 0 15px rgba(lighten($secondary-color, 1), 0.06);
-  }
-
-  #active {
-    background: rgba(lighten($secondary-color, 1), 0.3);
-    box-shadow: 0 0 10px rgba(lighten($secondary-color, 1), 0.6),
-      0 0 20px rgba(lighten($secondary-color, 1), 0.6),
-      0 0 30px rgba(lighten($secondary-color, 1), 0.6),
-      0 0 0 75px rgba(lighten($secondary-color, 1), 0.06),
-      0 0 0 60px rgba(lighten($secondary-color, 1), 0.06),
-      0 0 0 45px rgba(lighten($secondary-color, 1), 0.06),
-      0 0 0 30px rgba(lighten($secondary-color, 1), 0.06),
-      0 0 0 15px rgba(lighten($secondary-color, 1), 0.06);
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-  }
 }
 //services offered
 .projects {
