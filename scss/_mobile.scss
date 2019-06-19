@@ -3,12 +3,18 @@
   .index-links div {
     float: left;
   }
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 //for desktops and laptops
 @include mediaLg {
   .index-links div {
     float: left;
+  }
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -59,6 +65,9 @@
   .index-links div {
     float: left;
   }
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 //for smartphones
@@ -68,5 +77,8 @@
   }
   .index-links div {
     width: calc(100% - 60px) !important;
+  }
+  .projects {
+    grid-template-columns: 1fr;
   }
 }

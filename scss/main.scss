@@ -13,6 +13,15 @@ body {
   margin: 0;
   font-family: Catamaran;
   line-height: 1.5;
+
+  &.wencdci {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
 }
 
 //headings
@@ -225,11 +234,13 @@ main {
     border-bottom: $secondary-color 5px solid;
   }
 }
-//services offered
+//projects
+
 .projects {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
+
   img {
     width: 100%;
     border: 3px rgb(204, 204, 204) solid;
@@ -240,6 +251,32 @@ main {
       @include easeOut;
     }
   }
+}
+
+//my bttons
+
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+
+  &:hover {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
+}
+
+.btn-dark {
+  @extend .btn;
+  background: darken($primary-color, 50);
+  color: rgb(255, 255, 255);
+}
+
+.btn-light {
+  @extend .btn;
+  background: lghten($primary-color, 50);
+  color: #333;
 }
 
 #main-footer {
